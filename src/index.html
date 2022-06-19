@@ -8,21 +8,53 @@
       src="https://kit.fontawesome.com/1c9fea43b5.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="./app.js"></script>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <div class="card bg-success" style="width: 18rem;">
-        <div class="row">
-          <i class="fa-solid fa-chess-knight"></i>
-        </div>
-        <div class="row">
-          <p class="num"></p>
-        </div>
-        <div class="row">
-          <i class="fa-solid fa-chess-knight"></i>
+    <div class="container-fluid d-flex justify-content-center mt-4">
+      <form>
+        <label class="m-0" for="width"></label>
+        <input type="text" name="width" id="widt" placeholder="Width" />
+        <label class="m-0" for="height"></label>
+        <input type="text" name="height" id="heigh" placeholder="Height" />
+      </form>
+      <button
+        type="button"
+        class="btn btn-secondary btn-sm ms-2"
+        id="changeSize"
+        onclick="changeSize()"
+      >
+        Change size
+      </button>
+    </div>
+    <div class="container bg-success mt-4" style="width: 22rem;">
+      <div class="row">
+        <div class="d-flex justify-content-start align-items-start">
+          <i class="fa-solid fa-chess-knight m-4"></i>
         </div>
       </div>
-      <button type="button" class="btn btn-primary">Primary</button>
+      <div class="row">
+        <div class="d-flex justify-content-center align-items-center">
+          <p class="num m-2"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-flex justify-content-end align-items-end">
+          <i class="fa-solid fa-chess-knight m-4"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center mt-4">
+        <button
+          id="changeCard"
+          type="button"
+          class="btn btn-primary w-25"
+          onclick="changeCard()"
+        >
+          Change card
+        </button>
+      </div>
     </div>
   </body>
 </html>

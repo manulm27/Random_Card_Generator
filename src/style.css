@@ -1,1 +1,15 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.bg-success {
+  height: 500px;
+  border-radius: 10px;
+}
+
+.row {
+  height: 33.3%;
+}
+
+p,
+i {
+  font-size: 3em;
+}
